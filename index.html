@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">DZ Build Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Name
+            <input type="text" name="name" id="name" required placeholder="Enter your name">
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email" name="email" id="email" required placeholder="Enter your Email">
+        </label>
+        <label for="age" id="number-label">
+            Age
+            <input type="number" name="age" id="number" placeholder="How old are you?" min="17" max="60">
+        </label>
+        <label for="dropdown">
+            Would you recommend DZ Build to a friend?
+            <select name="dropdown" id="dropdown" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>
+            </select>
+        </label>
+        
+        <label for="fav" id="fav">Please select your favourite PC build?</label>
+        <input type="radio" name="fav" value="starter-pc" checked>Starter PC <br>
+        <input type="radio" name="fav" value="streaming-pc">Streaming PC <br>
+        <input type="radio" name="fav" value="creator-pc">Creator PC <br>
+        <input type="radio" name="fav" value="soho-pc">SOHO PC <br>
+
+        <label for="find-dz">How do you know DZ Build?</label>
+        <input type="checkbox" name="find-dz" value="1">Magazine<br>
+        <input type="checkbox" name="find-dz" value="2">Social Media<br>
+        <input type="checkbox" name="find-dz" value="3">Forum<br>
+        <input type="checkbox" name="find-dz" value="4">Internet<br>
+                
+        <label for="comment">
+            Any comments or suggestions?
+            <textarea name="comment" id="comment" cols="30" rows="30" placeholder="Enter your comment here..."></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
