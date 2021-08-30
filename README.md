@@ -1,2 +1,2 @@
 # dz-survey-form
-Submission for freeCodeCamp
+freeCodeCamp Responsive Web Design Projects - Product Landing Page submission.
